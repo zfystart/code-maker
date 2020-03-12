@@ -10,6 +10,23 @@
 [Github OAuth](https://developer.github.com/apps/building-github-apps/creating-a-github-app/)
 
 [](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-embedded-database-support)
+
+[mybatis](http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/index.html)
+
 ##工具
+
+##脚本
+```sql
+create table USER
+(
+  ID           int  AUTO_INCREMENT primary key,
+  ACCOUNT_ID   VARCHAR(100),
+  NAME         VARCHAR(50),
+  TOKEN        CHAR(36),
+  GMT_CREATE   BIGINT,
+  GMT_MODIFIED BIGINT
+);
+```
+
 
 

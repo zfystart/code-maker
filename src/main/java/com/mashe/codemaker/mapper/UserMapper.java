@@ -3,6 +3,7 @@ package com.mashe.codemaker.mapper;
 import com.mashe.codemaker.model.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 /**
  * @author zfystart
@@ -16,4 +17,6 @@ public interface UserMapper {
     void insert(User user);
 
 
+    @Select("select * from user where token = #{token}")
+    User findByToken(String token);
 }
