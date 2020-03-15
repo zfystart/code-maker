@@ -16,6 +16,7 @@
 [flyway migration](https://flywaydb.org/getstarted/firststeps/maven)
 
 ##工具
+[lombok](https://projectlombok.org/setup/maven)
 
 ##脚本
 ```sql
