@@ -1,0 +1,15 @@
+package com.mashe.codemaker.mapper;
+
+import com.mashe.codemaker.model.Question;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+
+/**
+ * @author zfystart
+ * @data 2020/3/13 - 20:48
+ */
+@Mapper
+public interface QuestionMapper {
+    @Insert("insert into question(title,description,gmt_create,gmt_modified,creator,tag) values(#{title},#{description},#{gmtCreate},#{gmtModified},#{creator},#{tag})")
+    void create(Question question);
+}
