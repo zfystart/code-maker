@@ -1,14 +1,14 @@
-package com.mashe.codemaker.model;
+package com.mashe.codemaker.dto;
 
-
+import com.mashe.codemaker.model.User;
 import lombok.Data;
 
 /**
  * @author zfystart
- * @data 2020/3/13 - 21:30
+ * @data 2020/3/15 - 17:46
  */
 @Data
-public class Question {
+public class QuestionDTO {
     private Integer id;
     private String title;
     private String description;
@@ -19,5 +19,5 @@ public class Question {
     private Integer viewCount;
     private Integer likeCount;
     private String tag;
-
+    private User user;
 }
